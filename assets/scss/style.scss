@@ -1,0 +1,30 @@
+@import "./partials/colore";
+@import "./partials/reset"; 
+@import "./partials/button";
+@import "./partials/mixins";
+@import "./partials/font";
+
+header {
+    background-color: $bgDestok;
+}
+
+h3 {
+    color: $colorSass;
+}
+
+.containerSectionOne {
+    background-color: $bgDestok;
+
+}
+
+.container {
+    color: $colorSass; 
+    p {
+        color: $colorText;
+    }
+}
+
+h1 {
+    font-size: $sizeTitle;
+    width: 80%;
+}

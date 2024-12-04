@@ -1,0 +1,22 @@
+@import "./font";
+@import "./colore";
+
+@mixin button($color) {
+    border: 2px solid $color;
+    border-radius: 5px;
+    font-size: $sizeText;
+    padding: 2px 5px;
+    background-color: lighten($color, 0%);
+  }
+  
+  $colors: (
+    blue: #0e6cff,
+    orange: #ff8700,
+    green: #4caf50,
+  );
+  
+  @each $key, $color in $colors {
+    .button--#{$key} {
+      @include button($color);
+    }
+ } 
